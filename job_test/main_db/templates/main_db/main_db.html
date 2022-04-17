@@ -1,0 +1,11 @@
+{% extends 'main_db/layout.html' %}
+
+{% block title %} main page {% endblock %}
+
+{% block content %}
+    <h4> база данных </h4>
+    <p> проверка работы приложения </p>
+    {% for el in customer %}
+            <p> {{ el.name }} </p>
+    {% endfor %}
+{% endblock %}
