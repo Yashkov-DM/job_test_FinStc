@@ -1,0 +1,12 @@
+{% extends 'main_db/layout.html' %}
+
+{% block title %} create page {% endblock %}
+
+{% block content %}
+    <h4> добавление записи </h4>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" placeholder="добавить продавца">
+        <button type="submit">Добавить запись</button>
+    </form>
+{% endblock %}
